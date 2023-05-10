@@ -56,4 +56,3 @@
 - name: Dns client configuration
   ansible.builtin.include_tasks: dns_client.yml
   when: bind_clients in group_names
-

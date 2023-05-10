@@ -15,7 +15,7 @@
   notify:
     - ansible-nameserver | reload bind
 
-- name: Manage_zones | ensuring {{ bind_zones_dir }} exists
+- name: Manage_zones | ensuring exists{{ bind_zones_dir }}
   ansible.builtin.file:
     path: "{{ bind_zones_dir }}"
     state: directory

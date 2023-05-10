@@ -9,7 +9,7 @@
         name: firewalld
         state: stopped
       listen: ansible-nameserver | reload bind
-    - name: ansible-nameserver | handler | restarts dockerd
+    - name: Handler | restarts dockerd
       become: true
       ansible.builtin.service:
         name: docker
