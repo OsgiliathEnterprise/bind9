@@ -1,4 +1,6 @@
 .idea
 **/*__pychache__*
+molecule/default/tests/__pycache__
+molecule/kvm/tests/__pycache__
 .cache
 build
