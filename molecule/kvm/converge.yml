@@ -3,7 +3,6 @@
   hosts: all
   vars:
     company_domain: "osgiliath.test"
-    dns_preferred_nic: docker0
     hostname: "dns.osgiliath.test"
     hosts_entries:
       - name: idm.osgiliath.test
@@ -27,7 +26,7 @@
          - "node0.{{ bind_pri_domain_name }}"
         records:
          - name: node0
-           address: 192.168.0.2
+           address: 192.168.1.1
            type: A
         soa: "host.{{ bind_pri_domain_name }}"
         refresh: 604800
@@ -40,7 +39,7 @@
       - 8.8.8.8
     bind_manage_zones: true
     bind_reverse_zones:
-      - zone: "168.192"
+      - zone: "169.192"
         refresh: 604800
         retry: 86400
         ttl: 32
@@ -64,4 +63,4 @@
         state: present
       become: true
   roles:
-    - role: tcharl.ansible_nameserver
+    - role: ansible-nameserver

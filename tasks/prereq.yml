@@ -1,0 +1,6 @@
+---
+- name: Prereq | install netaddr
+  ansible.builtin.package:
+    name: python-netaddr
+    state: present
+  become: True

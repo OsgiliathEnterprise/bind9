@@ -1,16 +1,16 @@
 ---
 namespace: "tcharl"
-name: "freeipa_server"
+name: "bind9"
 version: "1.0.1"
-description: "Role on top of the marvelous Freeipa server role to configure in compliancy with the Osgiliath platform topology"
+description: "Configures and runs (containerized) bind9 DNS server and configured it on clients"
 
 authors:
   - "Charlie Mordant <cmordant1@gmail.com>"
 
-repository: "https://github.com/OsgiliathEnterprise/freeipa_server"
-documentation: "https://github.com/OsgiliathEnterprise/freeipa_server/blob/master/README.md"
-homepage: "https://github.com/OsgiliathEnterprise/freeipa_server"
-issues: "https://github.com/OsgiliathEnterprise/freeipa_server/issues"
+repository: "https://github.com/OsgiliathEnterprise/bind9"
+documentation: "https://github.com/OsgiliathEnterprise/bind9/blob/master/README.md"
+homepage: "https://github.com/OsgiliathEnterprise/bind9"
+issues: "https://github.com/OsgiliathEnterprise/bind9/issues"
 
 readme: "README.md"
 license:

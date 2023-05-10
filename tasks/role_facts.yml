@@ -1,0 +1,21 @@
+---
+
+- name: Role facts | get current hostname
+  ansible.builtin.command: "hostname"
+  register: nameserver_machine_hostname
+  changed_when: false
+
+- name: Role facts | compute hostname
+  ansible.builtin.debug:
+    msg: "{{ hostname | default(nameserver_machine_hostname.stdout) }}"
+  register: nameserver_computed_host
+
+- name: Role facts | retreive current machine ip
+  ansible.builtin.setup:
+  register: current_host_facts
+  delegate_facts: true
+
+- name: Role facts | compute ip if preferred_nic is not set
+  ansible.builtin.debug:
+    msg: "{{ current_host_facts.ansible_facts['ansible_' + preferred_nic].ipv4.address if preferred_nic is defined else current_host_facts.ansible_facts.ansible_default_ipv4.address | default(current_host_facts.ansible_facts.ansible_all_ipv4_addresses[0]) }}"
+  register: current_host_ip

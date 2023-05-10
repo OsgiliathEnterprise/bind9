@@ -9,15 +9,13 @@ dependency:
 driver:
   name: vagrant
   provider:
-    name: virtualbox
+    name: parallels
 platforms:
   - name: dns.osgiliath.test
-    box: fedora/35-cloud-base
+    box: tcharl/fedora-36-aarch64
     provider_options:
       cpus: 2
       memory: 4096
-    provider_raw_config_args:
-      - "customize ['storagectl', :id, '--name', 'IDE', '--hostiocache', 'on']"
     groups:
       - bindmasters
       - bindclients
@@ -30,7 +28,7 @@ verifier:
   options:
     v: 1
 scenario:
-  name: default
+  name: parallels
   test_sequence:
     - dependency
     - cleanup
