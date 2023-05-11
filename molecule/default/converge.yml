@@ -5,13 +5,6 @@
     company_domain: "osgiliath.test"
     dns_preferred_nic: docker0
     hostname: "dns.osgiliath.test"
-    hosts_entries:
-      - name: idm.osgiliath.test
-        ip: 192.168.122.1
-      - name: infra.osgiliath.test
-        ip: 192.168.122.2
-      - name: poc.osgiliath.test
-        ip: 192.168.122.2
     bind_acls:
       - name: lan
         networks:
