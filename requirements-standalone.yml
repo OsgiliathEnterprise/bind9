@@ -10,3 +10,4 @@ roles:
   - name: robertdebock.fail2ban
   - name: robertdebock.epel
   - name: geerlingguy.ntp
+  - name: geerlingguy.docker
