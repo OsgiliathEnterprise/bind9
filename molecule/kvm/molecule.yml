@@ -12,9 +12,9 @@ driver:
     name: libvirt
 platforms:
   - name: dns.osgiliath.test
-    box: fedora/35-cloud-base
+    box: fedora/38-cloud-base
     provider_options:
-      driver: '"kvm"'
+      driver: "kvm"
       cpus: 2
       memory: 2048
     groups:
