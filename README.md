@@ -1,7 +1,7 @@
-Ansible SecureHost
+Ansible Bind9
 =========
 
-* Galaxy: [![Ansible Galaxy](https://img.shields.io/badge/galaxy-tcharl.freeipa_server-660198.svg?style=flat)](https://galaxy.ansible.com/tcharl/freeipa_server)
+* Galaxy: [![Ansible Galaxy](https://img.shields.io/badge/galaxy-tcharl.bind9-660198.svg?style=flat)](https://galaxy.ansible.com/tcharl/bind9)
 * Lint & requirements: ![Molecule](https://github.com/OsgiliathEnterprise/bind9/workflows/Molecule/badge.svg)
 * Tests: ![Molecule](https://app.travis-ci.com/OsgiliathEnterprise/bind9.svg?branch=master)
 * Chat: [![Join the chat at https://gitter.im/OsgiliathEnterprise/platform](https://badges.gitter.im/OsgiliathEnterprise/platform.svg)](https://gitter.im/OsgiliathEnterprise/platform?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
