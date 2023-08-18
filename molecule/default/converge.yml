@@ -5,6 +5,7 @@
     company_domain: "osgiliath.test"
     dns_preferred_nic: docker0
     hostname: "dns.osgiliath.test"
+    standalone_role: false
     bind_acls:
       - name: lan
         networks:
@@ -49,12 +50,5 @@
           - name: "node0.{{ bind_pri_domain_name }}"
             address: "2.0"
 
-  tasks:
-    - name: "Install bind utils"
-      ansible.builtin.package:
-        name:
-          - bind-utils
-        state: present
-      become: true
   roles:
     - role: tcharl.bind9

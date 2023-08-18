@@ -1,0 +1,5 @@
+---
+
+bind_clients: bindclients
+bind_masters_group: bindmasters
+bind_slaves_group: bindslaves

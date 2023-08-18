@@ -48,6 +48,5 @@
         records:
           - name: "node0.{{ bind_pri_domain_name }}"
             address: "2.0"
-
   roles:
     - role: tcharl.bind9

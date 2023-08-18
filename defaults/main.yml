@@ -21,7 +21,6 @@ bind_acls: []
 bind_caching_server: true
 
 bind_config: false
-bind_clients: bindclients
 bind_forward_zones:
   []
   # - zone: "{{ bind_pri_domain_name }}"
@@ -80,8 +79,6 @@ bind_forwarders:
 bind_manage_zones: false
 
 # Defines Ansible group which defines the Bind masters
-bind_masters_group: bindmasters
-
 bind_reverse_zones:
   []
   # - zone: 192.168
@@ -115,7 +112,6 @@ bind_reverse_zones:
   #   soa: "{{ ansible_hostname }}.{{ bind_pri_domain_name }}"
   #   ttl: 604800
 
-bind_slaves_group: bindslaves
 docker_shared_data: /usr/share/dockerdata
 bind_zones_dir: "{{ docker_shared_data }}/bind/zones"
 bind_zones_docker_dir: /etc/bind/zones
