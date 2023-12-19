@@ -4,6 +4,6 @@
     name: "{{ item }}"
     state: present
   loop:
-    - python-netaddr
+    - python3-netaddr
     - bind-utils
   become: True
