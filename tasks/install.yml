@@ -5,7 +5,7 @@
     name: tcharl.ansible_routing
   vars:
     firewalld_zones:
-      - name: public
+      - name:  "{{ firewalld_zone }}"
         masquerade: true
         enabled_services:
           - service: dns

@@ -119,3 +119,4 @@ bind_conf_dir: "{{ docker_shared_data }}/bind/conf"
 standalone_role: True
 bind_pri_domain_name: "{{ company_domain }}"
 secure_logs: Yes
+firewalld_zone: public
